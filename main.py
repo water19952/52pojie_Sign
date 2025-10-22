@@ -30,7 +30,7 @@ def sign(cookie):
     return result 
 
 def main():
-    b = os.environ['POJIE']
+    b = os.environ['COOKIE_POJIE']
     cookie = b
     sign_msg = sign(cookie=cookie)
     print(sign_msg)
