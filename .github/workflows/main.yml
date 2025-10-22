@@ -23,5 +23,5 @@ jobs:
           pip install beautifulsoup4
       - name: '开始签到'
         env:
-          POJIE: ${{ secrets.COOKIE_POJIE }}
+          COOKIE_POJIE: ${{ secrets.COOKIE_POJIE }}
         run: python main.py
